@@ -2,19 +2,21 @@
 
 ## Objective
 
-Este projeto visa a criação de um sistema dinâmico e amigável voltado à administração de vendas de veículos. Dentre suas funcionalidades, destacam-se:
+This project aims to create a dynamic and user-friendly system aimed at managing vehicle sales. Among its features, the following stand out:
 
-    1° Desenvolvimento de um website para apresentação da loja.
+    1° Development of a website to present the store.
     
-    2° Cadastro de veículos, incluindo carros, motos, vans e utilitários, com todas as         informações necessárias.
+    2° Registration of vehicles, including cars, motorcycles, vans and utility vehicles, with all necessary information.
     
-    3° Registro de proprietários, abrangendo nome, documentos e dados bancários.
+    3° Registration of owners, covering name, documents and bank details.
     
-    4° Execução das transações de venda dos veículos, garantindo o recebimento dos pagamentos, 
+    4° Execution of vehicle sales transactions, ensuring receipt of payments,
     
-    5° uma vez que o sistema está integrado ao banco.
+    5° since the system is integrated with the bank.
 
-Cabe ressaltar que esse sistema é alimentado por uma API Laravel, o que requer solicitações específicas para garantir seu desempenho ótimo.
+It is worth noting that this system is powered by a Laravel API, which requires specific requests to ensure optimal performance.
+
+[Link to LARAVEL API](https://github.com/Leon14789/car-sale-api)
 
 
 ## Requisites for app
@@ -26,4 +28,23 @@ Cabe ressaltar que esse sistema é alimentado por uma API Laravel, o que requer 
   <li>Composer</li>
   <li>Laravel v11</li>
 
+</ul>
+
+## commands needed to run the project
+
+<ul>
+  <li>Npm i</li>
+</ul>
+
+
+## Libraries used
+
+<ul>
+  <li>Material UI</li>
+  <li> Boostrap</li>
+  <li>React Icons</li>
+  <li>React Router Dom</li>
+  <li>Redux</li>
+  <li>React Redux </li>
+  <li>Redux Thunk</li>
 </ul>
