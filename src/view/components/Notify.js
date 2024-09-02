@@ -2,9 +2,8 @@ import React from 'react';
 import { changeNotify } from '../../store/actions/notify.action';
 import  {Snackbar , SnackbarContent  } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
-import { makeStyles } from '@mui/styles';
-
 import { red, green } from '@mui/material/colors';
+import { makeStyles } from '@mui/styles';
 
 
 const useStyles = makeStyles({

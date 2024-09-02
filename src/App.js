@@ -4,7 +4,7 @@ import { store } from "./store/store";
 import { createTheme, ThemeProvider,  } from '@mui/material/styles';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Routes from './Routes'
-import { Loading, Notify } from "./view/components";
+import { Loading, Notify, Alert } from "./view/components";
 import './global.css'
 
 
@@ -38,7 +38,7 @@ function App() {
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
-        <Notify /> 
+        <Alert />
           <h1 className="text-success">Você está no / </h1>
          
 
