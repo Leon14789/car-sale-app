@@ -5,7 +5,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { red, green } from '@mui/material/colors';
 import { makeStyles } from '@mui/styles';
 
-
 const useStyles = makeStyles({
   
   success: {
@@ -37,7 +36,7 @@ export default function Notify() {
      className={ classes[notify.class]  }
      
       message={
-        <span className='d-flex aling-items-center'> {notify.message} </span>
+        <span className='d-flex aling-items-center'> {notify.msg} </span>
       }
       
       />

@@ -13,9 +13,7 @@ import './global.css'
 const theme = createTheme({
   
   palette: {
-      primary: {
-        main: '#f57c00',
-      },
+    
     
   },
 
@@ -39,19 +37,8 @@ function App() {
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <Alert />
-          <h1 className="text-success">Você está no / </h1>
-         
-
+        <Notify />
         <Loading />
-
-
-
-      <Confirm
-        open={true}
-        onClose={() => alert('Close')}
-        onConfirm={()=> alert('Confirm')}
-        />
-
         <Routes />
       </ThemeProvider>
     </Provider>

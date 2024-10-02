@@ -1,3 +1,26 @@
 .outiline-none {
     outline: none !important;
 }
+
+:root {
+    --primary: #007bff; /* Azul para a cor principal */
+    secondary: #233254; /* Cor secundária da sua escolha */
+    tertiary: #FBB900; /* Cor terciária da sua escolha */
+    
+    /* Definindo cores para o texto */
+    text-primary: #ffffff; /* Texto branco */
+    text-secondary: #000000; /* Texto preto */
+    
+    /* Background padrão */
+    --background-color: #D3D3D3; /* Cinza claro */
+    
+    /* Definindo a fonte */
+    --font-family-primary: 'Verdana', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-family-primary);
+    background-color: var(--background-color);
+    color: var(text-secondary); /* Define o texto padrão como preto */
+  }
+  

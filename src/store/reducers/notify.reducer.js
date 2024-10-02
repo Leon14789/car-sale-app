@@ -1,12 +1,12 @@
 import { actionTypes } from "../actions/notify.action";
 
 const initialState = {
-    open: true,
+    open: false,
     horizontal: 'left',
-    vertical: 'bottom',
-    class: 'success',
+    vertical: 'center',
+    class: 'error',
     time: 3000,
-    message: 'Pão de Queijo'
+    msg: ''
 }
 
 export default (state = initialState, { type, payload }) => {
@@ -19,3 +19,4 @@ export default (state = initialState, { type, payload }) => {
     return state
   }
 }
+

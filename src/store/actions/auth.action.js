@@ -2,12 +2,13 @@ import { Http } from "../../config/Http"
 import { changeLoading } from "./loading.action"
 import { changeNotify } from "./notify.action"
 
+
 export const actionTypes = {
     CHANGE: 'AUTH_CHANGE',
     SUCCESS: 'AUTH_SUCCESS'
 }
 
-export const chage = (payload) => ({
+export const change = (payload) => ({
   type: actionTypes.CHANGE,
   payload
 })
@@ -37,10 +38,10 @@ dispatch(changeLoading({
     msg: "Autenticando Usuario..."
 }))
 
-    return Http.POST('/oauth/authorize', {
+    return Http.post('oauth/token', {
         grant_type: 'password',
-        client_id: '1',
-        client_secret: '79i0WceZC952KqL8mCJU93OQzIBodpcR82dZOJJ8',
+        client_id: '9d2686c5-d13e-403a-8b76-5349e60b15f6', 
+        client_secret: '91sjyoalprwLfBciIMoxc06o8PDf7QG2NRBpia94',
         username: crendentials.email,
         password: crendentials.password
 
@@ -56,20 +57,23 @@ dispatch(changeLoading({
         dispatch(changeLoading({ open: false }))
 
         if (typeof error.response !== 'undefined') {
-            if (error.response.status === 401 || error.response.status === 400 ) {
-                dispatch( changeNotify({
-                    open: true,
-                    class: 'error',
-                    msg: "Email ou Senha Invalidos"
-                }) )
-            }   
-        } else {
-            dispatch( changeNotify({
-                open: true,
-                class: 'error',
-                msg: "Erro ao se conectar com o servidor, entre em contato com o suporte."
-            }) )
-        }
+                if (error.response.status === 401 || error.response.status === 400 ) {
+                    dispatch(changeNotify({
+                        open: true,
+                        class: 'error',
+                        msg: "Email ou Senha Invalidos"
+                    }))
+                } else {
+                    dispatch( changeNotify({
+                        open: true,
+                        class: 'error',
+                        msg: "Erro ao se conectar com o servidor, entre em contato com o suporte."
+                    }) )
+                }
+
+
+        } 
+        
     })
 
 }
