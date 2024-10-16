@@ -7,7 +7,7 @@ import Header from '../header'
 export default function Vehicles() {
   return (
     <>
-   <Header />
+   <Header title="Veiculos"/>
        
     </>
   )
