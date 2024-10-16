@@ -50,7 +50,6 @@ export default function Auth() {
                   </Button>
 
                   {(success) &&
-                        
                         <Navigate  to="vehicles" />
                   }
               </div>

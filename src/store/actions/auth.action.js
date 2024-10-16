@@ -40,8 +40,8 @@ dispatch(changeLoading({
 
     return Http.post('oauth/token', {
         grant_type: 'password',
-        client_id: '9d2686c5-d13e-403a-8b76-5349e60b15f6', 
-        client_secret: '91sjyoalprwLfBciIMoxc06o8PDf7QG2NRBpia94',
+        client_id: '9d291c61-ffda-4c69-801b-2fd1997b9c50', 
+        client_secret: 'f1IvwGiDjSvzythL3BJuW85sDCh0gopXWhhud9F6',
         username: crendentials.email,
         password: crendentials.password
 

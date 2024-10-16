@@ -1,9 +1,10 @@
 import React,{Suspense, lazy} from "react";
 import {BrowserRouter as Router, Routes, Route, } from 'react-router-dom'
 import { CircularProgress } from "@mui/material";
-import Auth from "./view/auth";
 
-
+const Auth = lazy(() => import('./view/auth'))
+const Vehicles = lazy(() => import('./view/vehicles'))
+const Register = lazy(() => import('./view/register'))
 
 
 
@@ -13,9 +14,13 @@ import Auth from "./view/auth";
         <Suspense fallback={ <div className="d-flex justify-content-center mt-5 pt-5"> <CircularProgress /> </div> }>
             <Routes>
 
-                <Route exact path="/" Component={Auth} />
+                <Route path="/" Component={Auth} />
                 <Route exact path="/login" Component={Auth} />
-                <Route exact path="/vehicles" Component={() => (<h1>VOCE ESTA NA ROTA VEICULOS</h1>)} />
+
+                <Route path="/vehicles" Component={Vehicles} />
+                <Route path="/register" Component={Register} />
+
+
                
             </Routes>
         </Suspense>

@@ -4,7 +4,7 @@ const initialState = {
     open: false,
     horizontal: 'left',
     vertical: 'center',
-    class: 'error',
+    class: '',
     time: 3000,
     msg: ''
 }
